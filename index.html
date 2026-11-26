@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="" lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#18120e;color:#ede0d9;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.wood-grain-subtle {
+  background-image: radial-gradient(circle at 50% -20%, rgba(249, 189, 34, 0.08), transparent 70%), linear-gradient(to bottom, #18120e, #211a16 50%, #130d09);
+}
+.hearth-glow {
+  box-shadow: 0 0 50px -10px rgba(238, 152, 0, 0.25), 0 0 100px -20px rgba(185, 28, 28, 0.2);
+}
+.festive-red-btn {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
+  box-shadow: 0 4px 20px rgba(185, 28, 28, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+.festive-red-btn:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+  box-shadow: 0 6px 25px rgba(238, 152, 0, 0.35), 0 4px 20px rgba(185, 28, 28, 0.6);
+}
+.timber-card {
+  background: linear-gradient(145deg, rgba(43, 33, 27, 0.88), rgba(28, 21, 17, 0.95));
+  border: 1px solid rgba(249, 189, 34, 0.15);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 222, 184, 0.08);
+}
+.timber-card-interactive:hover {
+  border-color: rgba(249, 189, 34, 0.35);
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(238, 152, 0, 0.12);
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        surface: "#18120e",
+        "surface-dim": "#130d09",
+        "surface-container-lowest": "#100a07",
+        "surface-container-low": "#211a16",
+        "surface-container": "#2a211c",
+        "surface-container-high": "#342a24",
+        "surface-container-highest": "#40342d",
+        background: "#18120e",
+        "on-surface": "#fbf8f3",
+        "on-surface-variant": "#d6c7b2",
+        "outline-variant": "#4a3a33",
+        "outline": "#8a756a",
+        primary: "#ffb4ab",
+        "primary-container": "#b91c1c",
+        "on-primary-container": "#ffcdc7",
+        "on-primary": "#ffffff",
+        secondary: "#b91c1c",
+        "secondary-hover": "#dc2626",
+        "secondary-container": "#ee9800",
+        "on-secondary": "#ffffff",
+        tertiary: "#f9bd22",
+        "tertiary-container": "#4a3500",
+        "on-tertiary": "#261a00",
+        "gold-warm": "#f9bd22",
+        "gold-light": "#fedb86",
+        "chalet-timber": "#d6c7b2",
+        "pine-deep": "#151c17",
+        "pine-accent": "#233328",
+        "snow-frost": "#f3ede2",
+        "snow-pure": "#ffffff"
+      },
+      fontFamily: {
+        "display-hero": ["Playfair Display", "serif"],
+        "headline-lg": ["Playfair Display", "serif"],
+        "headline-md": ["Playfair Display", "serif"],
+        "headline-sm": ["Playfair Display", "serif"],
+        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+        "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+      },
+      fontSize: {
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
+        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}]
+      },
+      spacing: {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2.5rem",
+        "space-2xl": "4rem",
+        "gutter-sm": "1rem",
+        "gutter": "1.5rem",
+        "gutter-lg": "2rem"
+      }
+    }
+  }
+};</script></head><body class="bg-surface text-on-surface font-body-md antialiased wood-grain-subtle selection:bg-primary-container selection:text-white" style="background-color: #FAF6F0; color: #2C211B; font-family: 'Plus Jakarta Sans', sans-serif;"><header class="fixed top-0 left-0 right-0 z-50 bg-[#16100c]/90 backdrop-blur-xl border-b border-[#3d2f27] shadow-[0_4px_25px_rgba(0,0,0,0.6)]" style="background: rgba(254, 252, 248, 0.94); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(216, 203, 181, 0.5); box-shadow: 0 4px 20px rgba(73, 50, 36, 0.06);"><div class="w-full bg-gradient-to-r from-[#7a1313] via-[#b91c1c] to-[#7a1313] text-[#fedb86] py-2 px-gutter text-center font-label-caps text-label-caps tracking-widest flex items-center justify-center gap-space-xs shadow-inner"><span class="material-symbols-outlined text-gold-light text-[15px] animate-pulse">ac_unit</span><span class="text-snow-pure font-semibold tracking-wider">Зимний сезон &amp; Новогодние праздники 2025/2026 в Бакуриани • Праздничный комплимент при бронировании</span><span class="material-symbols-outlined text-gold-light text-[15px] animate-pulse">ac_unit</span></div><div class="h-20 max-w-7xl mx-auto flex items-center justify-between gap-space-md px-4 sm:px-gutter-lg"><a class="flex items-center gap-space-sm group" data-path="glavnaya" href="#"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F5EBE1] to-[#EBDCCF] border border-[#D8CBB5] text-[#8C2323] flex items-center justify-center shadow-sm group-hover:scale-105 transition-all"><span class="material-symbols-outlined text-[22px]">cabin</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-[#2C211B] tracking-tight leading-none group-hover:text-[#8C2323] transition-colors">mta.</span><span class="font-label-caps text-label-caps tracking-[0.22em] text-[#937C67] uppercase mt-1 font-semibold">Bakuriani • Alpine Chalet</span></div></a><nav class="hidden xl:flex items-center gap-1.5 p-1.5 bg-[#F2EDE4]/90 border border-[#E3DACB] rounded-full shadow-inner"><a class="px-4 py-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] hover:bg-[#FFFFFF] transition-all rounded-full" data-path="apartamenty" href="#philosophy">Апартаменты</a><a class="px-4 py-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] hover:bg-[#FFFFFF] transition-all rounded-full" data-path="galereya" href="#gallery-section">Галерея</a><a class="px-4 py-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] hover:bg-[#FFFFFF] transition-all rounded-full" data-path="3d-tur" href="#tour3d">3D-тур</a><a class="px-4 py-1.5 font-label-md text-label-md text-[#B91C1C] font-semibold hover:text-[#991B1B] hover:bg-[#FFFFFF] transition-all rounded-full flex items-center gap-1" data-path="novogodniy-otdyh" href="#experiences"><span class="material-symbols-outlined text-[15px] text-[#B91C1C]">flare</span>Зимний отдых</a><a class="px-4 py-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] hover:bg-[#FFFFFF] transition-all rounded-full" data-path="svobodnye-daty-i-tseny" href="#booking-calendar">Даты &amp; Цены</a><a class="px-4 py-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] hover:bg-[#FFFFFF] transition-all rounded-full" data-path="lokatsiya" href="#location">Локация</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-[#F2EDE4] border border-[#E3DACB] rounded-full p-1 font-label-sm text-label-sm text-[#5E4E42]"><span class="px-2.5 py-1 rounded-full bg-[#FFFFFF] text-[#2C211B] font-bold shadow-sm">RU</span><span class="px-2.5 py-1 hover:text-[#2C211B] transition-colors cursor-pointer">EN</span><span class="px-2.5 py-1 hover:text-[#2C211B] transition-colors cursor-pointer">GE</span></div><a class="hidden sm:flex items-center gap-1.5 font-label-md text-label-md text-[#5E4E42] hover:text-[#2C211B] transition-colors px-3 py-1.5 rounded-full hover:bg-[#F2EDE4]" data-path="lichnyy-kabinet" href="#"><span class="material-symbols-outlined text-[18px] text-[#B91C1C]">key</span><span>Кабинет</span></a><a class="flex items-center gap-space-xs festive-red-btn text-snow-pure px-5 py-2.5 rounded-full font-label-md text-label-md transition-all font-semibold tracking-wide shadow-md hover:shadow-lg px-3.5 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-label-md" data-path="bronirovanie" href="#booking-calendar"><span class="material-symbols-outlined text-[18px] text-[#FEDB86]">ac_unit</span><span>Забронировать даты</span></a></div></div></header><main class="w-full pt-28 bg-surface" style="background: #FAF6F0; min-height: 100vh;"><div class="flex flex-col w-full relative overflow-hidden select-none">
+<!-- Interactive Snow Canvas Background Layer -->
+<canvas class="fixed inset-0 pointer-events-none z-40 w-full h-full opacity-65" id="snow-canvas"></canvas>
+<!-- Ambient Fireplace Ember Glows & Pine Shadows -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-[1000px] h-[580px] bg-gradient-to-b from-[#ee9800]/15 via-[#b91c1c]/10 to-transparent rounded-full blur-[150px] pointer-events-none -z-10"></div>
+<div class="absolute top-[1350px] right-[-100px] w-[650px] h-[650px] bg-[#ee9800]/10 rounded-full blur-[170px] pointer-events-none -z-10"></div>
+<div class="absolute top-[2700px] left-[-150px] w-[750px] h-[750px] bg-[#b91c1c]/15 rounded-full blur-[190px] pointer-events-none -z-10"></div>
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[92vh] flex flex-col justify-end px-gutter-sm sm:px-gutter md:px-gutter-lg pb-space-2xl pt-space-md">
+<!-- Hero Chalet Canvas Card with Warm Timber Frame & Fireplace Mood -->
+<div class="relative w-full max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-[#4a3a33] bg-[#1a120c] min-h-[82vh] flex flex-col justify-between p-space-md sm:p-space-xl md:p-space-2xl text-on-surface hearth-glow" style="background: linear-gradient(160deg, #1C2B22 0%, #17241D 45%, #241D17 100%); border: 1px solid rgba(242, 222, 194, 0.25); box-shadow: 0 25px 50px -12px rgba(28, 43, 34, 0.25), 0 0 45px rgba(238, 152, 0, 0.15);">
+<!-- Real High-Res Hero Image with Alpine Hearth Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="mta Bakuriani Chalet in Winter" class="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.08] scale-100 transform hover:scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrB0VeBVU73odfrR932IWJEUTdKC1pzJGjEpksZ64-H_UggmRA76eHHkfFVHInca4oUKZ-mSkVDOVbksjcc2jL4MtLHBg7EFA3esziiic0HxNeqhM8aMUR2sFJmDJ2y-3R4P4XeSRQ72_ZY9CsdZbwmzXmnrkieEiwT1sfR-kZ4nnyAwVLwKMx13boYnvVJ_VYfhEypwyBqYvgSXnHGjNPPw7u5AyxWxez9_TXWEfL0oqg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#120c08] via-[#1a120c]/60 to-[#120c08]/40"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#18120e] via-[#1a120c]/70 to-transparent"></div>
+<!-- Warm Fireplace Ember Ambience across bottom -->
+<div class="absolute bottom-0 inset-x-0 h-64 bg-gradient-to-t from-[#ee9800]/10 via-[#b91c1c]/10 to-transparent pointer-events-none"></div>
+</div>
+<!-- Festive Garland / Pine Badge Top Strip -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-[#18120e]/80 backdrop-blur-xl border border-[#f9bd22]/30 shadow-lg text-gold-light">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-caps text-label-caps tracking-[0.2em] uppercase text-snow-pure font-semibold">Грузия • Бакуриани 1800м • Зимний сезон</span>
+</div>
+<div class="hidden sm:inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-[#241a14]/85 border border-[#3d2f27] backdrop-blur-md text-gold-warm">
+<span class="material-symbols-outlined text-[17px] text-secondary">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-snow-frost">Тёплый очаг у заснеженного хвойного бора</span>
+</div>
+</div>
+<!-- Main Headline & Booking Widget Container -->
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end mt-space-2xl">
+<!-- Hero Title Copy -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs text-gold-warm">
+<span class="material-symbols-outlined text-secondary text-[18px]">fireplace</span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase font-semibold text-gold-light">Новогодние &amp; Рождественские праздники</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg sm:text-[56px] sm:leading-[64px] text-snow-pure tracking-tight text-[32px] leading-[40px]">
+            Ближе к горам.<br/>
+<span class="italic font-display-hero text-gold-warm drop-shadow-[0_2px_15px_rgba(249,189,34,0.3)]">Ближе к празднику и себе.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-snow-frost/90 max-w-xl leading-relaxed">
+            Ваше тёплое новогоднее убежище среди заснеженных пиков Бакуриани. Тишина за панорамным окном, морозные сосны, уют натурального дерева и волшебный пар горячего чана.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs text-chalet-timber">
+<div class="flex items-center gap-1.5 bg-[#1b1410]/80 border border-[#40332b] backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs text-snow-frost">
+<span class="material-symbols-outlined text-gold-warm text-[16px]">cottage</span> Двухуровневое шале
+</div>
+<div class="flex items-center gap-1.5 bg-[#1b1410]/80 border border-[#40332b] backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs text-snow-frost">
+<span class="material-symbols-outlined text-secondary text-[16px]">downhill_skiing</span> 10 мин до Кохта &amp; Дидвели
+</div>
+<div class="flex items-center gap-1.5 bg-[#1b1410]/80 border border-[#40332b] backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs text-snow-frost">
+<span class="material-symbols-outlined text-gold-warm text-[16px]">local_fire_department</span> 100% приватность
+</div>
+</div>
+</div>
+<!-- Floating Dark Timber Booking Strip -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="timber-card p-space-lg rounded-2xl text-on-surface shadow-2xl flex flex-col gap-space-md backdrop-blur-xl border border-[#523e33]" style="background: rgba(25, 36, 29, 0.88); backdrop-filter: blur(25px); border: 1px solid rgba(254, 219, 134, 0.25); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);">
+<div class="flex items-center justify-between pb-2 border-b border-[#3d2f27]">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_#b91c1c]"></span>
+<span class="font-label-caps text-label-caps text-gold-light uppercase font-semibold">Новогодний сезон</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-gold-warm font-bold">$150</span>
+<span class="font-label-sm text-label-sm text-chalet-timber"> / ночь</span>
+</div>
+</div>
+<!-- Date Selectors -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-xl bg-[#201813] border border-[#3e2e25] hover:border-gold-warm/40 transition-colors cursor-pointer">
+<span class="block font-label-caps text-label-caps text-chalet-timber/80">Заезд</span>
+<div class="flex items-center gap-1.5 text-snow-pure font-label-md text-label-md mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_month</span>
+<span id="hero-checkin-val">28 дек. 2025</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-[#201813] border border-[#3e2e25] hover:border-gold-warm/40 transition-colors cursor-pointer">
+<span class="block font-label-caps text-label-caps text-chalet-timber/80">Выезд</span>
+<div class="flex items-center gap-1.5 text-snow-pure font-label-md text-label-md mt-0.5">
+<span class="material-symbols-outlined text-secondary">calendar_month</span>
+<span id="hero-checkout-val">04 янв. 2026</span>
+</div>
+</div>
+</div>
+<!-- Guests Dropdown / Info -->
+<div class="flex items-center justify-between px-space-sm py-2.5 rounded-xl bg-[#201813] border border-[#3e2e25] text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-gold-warm text-[18px]">group</span>
+<span class="font-label-md text-label-md text-snow-frost">Гости: 2–6 человек</span>
+</div>
+<span class="font-label-sm text-label-sm text-gold-light font-semibold">Семья / Компания</span>
+</div>
+<!-- CTA Button -->
+<a class="w-full flex items-center justify-center gap-space-xs festive-red-btn text-snow-pure py-3.5 px-space-md rounded-xl font-label-md text-label-md font-semibold transition-all transform hover:-translate-y-0.5 border border-[#ff8373]/30" href="#booking-calendar">
+<span class="material-symbols-outlined text-[18px] text-gold-light">ac_unit</span>
+<span>Найти свободные даты на праздники</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Direct Host Line & Santa Surprise Notice -->
+<div class="flex items-center justify-between text-xs text-chalet-timber pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">lock</span>
+                Прямая бронь от хозяйки
+              </span>
+<span class="text-gold-light font-medium">Без комиссий сервисов</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar Subtle Meta -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-sm pt-space-lg text-chalet-timber/90 font-body-sm text-body-sm border-t border-[#3d2e26]/60">
+<span>Одна квартира. Ваш маленький заснеженный мир на высоте 1800м.</span>
+<a class="flex items-center gap-1.5 text-gold-light hover:text-snow-pure transition-colors" href="#philosophy">
+<span class="font-medium">Почувствовать место</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- NEW YEAR SPECIAL PROMO BANNER: Santa Gift Box in Festive Ruby & Velvet -->
+<!-- SECTION: PHILOSOPHY & AMBIENCE (Здесь можно просто быть) -->
+<section class="max-w-7xl mx-auto w-full px-gutter-sm sm:px-gutter md:px-gutter-lg py-space-2xl" id="philosophy"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFE8DD] text-[#8C2323] w-fit font-label-caps text-label-caps tracking-[0.2em] font-bold uppercase"><span class="material-symbols-outlined text-[15px]">mountains</span><span>МТА — по-грузински «гора»</span></div><h2 class="font-headline-lg text-headline-lg text-[#231A14] tracking-tight">Здесь можно<br/><span class="italic text-[#B91C1C] font-display-hero">просто быть.</span></h2><p class="font-body-lg text-body-lg text-[#5A483C] leading-relaxed">Мягкий рассеянный свет зимнего солнца, аромат натурального дерева и утро без будильников. Уютные апартаменты в Бакуриани созданы для умиротворенных зимних каникул, семейных рождественских ужинов и душевных разговоров под шум снега за окном.</p><div class="p-space-md rounded-2xl flex flex-col gap-space-sm bg-[#FFFFFF] border border-[#E9E1D4] shadow-[0_10px_30px_rgba(70,48,34,0.05)]"><div class="flex items-center justify-between pb-2 border-b border-[#F0EAE0]"><span class="font-label-caps text-label-caps text-[#877264] uppercase tracking-wider font-semibold">Спальные места для комфорта</span><span class="font-label-sm text-label-sm bg-[#B91C1C] text-[#FFFFFF] px-3 py-0.5 rounded-full font-bold shadow-sm">до 6 гостей</span></div><div class="grid grid-cols-2 gap-space-sm text-[#2C211B] grid-cols-1 sm:grid-cols-2"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">bed</span><span class="font-body-sm text-body-sm font-medium">1 двуспальная king-size</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">bedroom_child</span><span class="font-body-sm text-body-sm font-medium">2 односпальных яруса</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">chair</span><span class="font-body-sm text-body-sm font-medium">1 раскладной диван</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">laptop_mac</span><span class="font-body-sm text-body-sm font-medium">Зона для работы / чтения</span></div></div></div><div class="grid grid-cols-3 gap-space-sm pt-space-xs text-center"><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#EBE4D8] shadow-sm"><span class="material-symbols-outlined text-[#D4891C] text-[24px]">floor</span><div class="font-label-sm text-label-sm font-bold text-[#2C211B] mt-1">Тёплый пол</div><div class="text-[11px] text-[#827163]">по всему периметру</div></div><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#EBE4D8] shadow-sm"><span class="material-symbols-outlined text-[#2A593D] text-[24px]">forest</span><div class="font-label-sm text-label-sm font-bold text-[#2C211B] mt-1">Вид на лес</div><div class="text-[11px] text-[#827163]">вековые ели в снегу</div></div><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#EBE4D8] shadow-sm"><span class="material-symbols-outlined text-[#D4891C] text-[24px]">wifi</span><div class="font-label-sm text-label-sm font-bold text-[#2C211B] mt-1">Свой ритм</div><div class="text-[11px] text-[#827163]">скоростной 100 Mbps</div></div></div></div><div class="lg:col-span-7 grid grid-cols-12 gap-space-md"><div class="col-span-7 relative group rounded-3xl overflow-hidden shadow-[0_15px_35px_rgba(70,48,34,0.12)] aspect-[4/5] bg-[#FFFFFF] border border-[#E8DEC8] col-span-12 sm:col-span-7"><img alt="Спальня в теплых тонах mta Bakuriani" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrBJptnhH2eg4NVxiK_H0X_5Un0ZIuY49QK7nmmpj5DAFhwSHCIMb2qLOmrOm5ULSwUG1RuglZ9_1Skx5o6dTgUwKeb03T4O7tWmAY6U173pmtqD5o2G6LqE83JPWazjHqc2wBDU0-PGvG_gsh3nyh2gMaR_jJ7wP7J0ZYITAdtw943fOJ7zhCY-9KgWlxbuxRtIXyG3RMp2lsF8ueXv_yJ7aCWD695uSU3ZPWaTQgA6bg"/><div class="absolute inset-0 bg-gradient-to-t from-[#1C1510]/80 via-transparent to-transparent"></div><div class="absolute bottom-5 left-5 right-5 text-white"><span class="font-label-caps text-label-caps text-[#FEDB86] uppercase tracking-wider font-bold">Главная спальня</span><p class="font-headline-sm text-headline-sm font-medium mt-1 text-white">Тишина и тепло деревянных стен</p></div></div><div class="col-span-5 flex flex-col gap-space-md col-span-12 sm:col-span-5 grid grid-cols-2 sm:flex sm:flex-col"><div class="relative group rounded-2xl overflow-hidden shadow-[0_10px_25px_rgba(70,48,34,0.1)] aspect-square bg-[#FFFFFF] border border-[#E8DEC8]"><img alt="Гостиная с панорамным окном" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrBn_sWbLn5trqClHOksXiGV7g1Ld5VgrV9ZSoZLEDyjsl3jIEo7hrSP2vxrRwz9mJmky9KKBwW8YJFgus84gCcHbmHB5XXp1bTWdyfKmiBd2tngW8ph_3yIN7yRmEA61NhihA9W_S2IG2w5pPkMGrtfREST3jRKcclLyjCGbpFU4UBFDGgU6V6BhPDFt6ByXRg3Jj8qTvnEhMXqWjcx5jdqWiat2odsaEwJXPjhx2fdHA"/><div class="absolute inset-0 bg-gradient-to-t from-[#1C1510]/75 via-transparent to-transparent"></div><div class="absolute bottom-3 left-3 text-white"><span class="font-label-sm text-label-sm font-semibold">Гостиная с видом на склон</span></div></div><div class="relative group rounded-2xl overflow-hidden shadow-[0_10px_25px_rgba(70,48,34,0.1)] aspect-square bg-[#FFFFFF] border border-[#E8DEC8]"><img alt="Уютные двухъярусные кровати" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrCWyPHe4aVWjAxOgVYgkCYVC7WTGCONekBeWTltALjt1u8Diz_xRHUwWT_efFnqC-tyN3JY7MoQ_altuOmWlZuekxfTDqjBiANlKZ9A0Rlxxjo8dWgXaSwsGf1XEBkM7ghFmU2OOfL8UpPCzkWYnqnUzlRhlx6P2xFtpWNSbyCv97ZMnWlMi0O4Fs8zi8Sl6hek6nT0bwbWDJa3YzVjT8DLSmYjEof9_dxqDBl3Ww2cjQ"/><div class="absolute inset-0 bg-gradient-to-t from-[#1C1510]/75 via-transparent to-transparent"></div><div class="absolute bottom-3 left-3 text-white"><span class="font-label-sm text-label-sm font-semibold">Уютный ярусный альков</span></div></div></div></div></div></section>
+<!-- SECTION: INTERACTIVE GALLERY (Уют — в зимних деталях) -->
+<section class="w-full py-space-2xl bg-[#1e1713] border-y border-[#3d2f27]" id="gallery-section" style="background: #F4EFE6; border-top: 1px solid #E8DFD0; border-bottom: 1px solid #E8DFD0;">
+<div class="max-w-7xl mx-auto px-gutter-sm sm:px-gutter md:px-gutter-lg flex flex-col gap-space-xl"><div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"><div><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8E0D2] text-[#8C2323] w-fit font-label-caps text-label-caps tracking-[0.2em] font-bold uppercase mb-1"><span>Рассмотрите поближе</span></div><h2 class="font-headline-lg text-headline-lg text-[#231A14] mt-1">Уют — в зимних деталях.</h2></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm text-[#6C5B4E]">Пять ракурсов вашего будущего отдыха</span><div class="flex items-center gap-2"><button aria-label="Предыдущее фото" class="w-11 h-11 rounded-full bg-[#FFFFFF] border border-[#DDD3C2] hover:border-[#B91C1C] shadow-sm flex items-center justify-center text-[#2C211B] hover:text-[#B91C1C] transition-all" id="gal-prev-btn"><span class="material-symbols-outlined text-[20px]">west</span></button><button aria-label="Следующее фото" class="w-11 h-11 rounded-full bg-[#FFFFFF] border border-[#DDD3C2] hover:border-[#B91C1C] shadow-sm flex items-center justify-center text-[#2C211B] hover:text-[#B91C1C] transition-all" id="gal-next-btn"><span class="material-symbols-outlined text-[20px]">east</span></button></div></div></div><div class="flex gap-space-md overflow-x-auto pb-4 pt-1 snap-x scrollbar-none scroll-smooth" id="gallery-scroller"><div class="snap-start shrink-0 w-[300px] sm:w-[380px] rounded-3xl bg-[#FFFFFF] border border-[#EAE1D3] shadow-[0_10px_25px_rgba(70,48,34,0.06)] overflow-hidden flex flex-col group cursor-pointer hover:shadow-xl transition-all"><div class="relative h-[440px] overflow-hidden"><img alt="Кухня с видом на заснеженные ели" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrB0VeBVU73odfrR932IWJEUTdKC1pzJGjEpksZ64-H_UggmRA76eHHkfFVHInca4oUKZ-mSkVDOVbksjcc2jL4MtLHBg7EFA3esziiic0HxNeqhM8aMUR2sFJmDJ2y-3R4P4XeSRQ72_ZY9CsdZbwmzXmnrkieEiwT1sfR-kZ4nnyAwVLwKMx13boYnvVJ_VYfhEypwyBqYvgSXnHGjNPPw7u5AyxWxez9_TXWEfL0oqg"/><div class="absolute top-4 left-4 bg-[#FFFFFF]/90 backdrop-blur-md text-[#2C211B] border border-[#E5DACB] text-xs font-label-caps font-bold px-3 py-1 rounded-full shadow-sm">01 / 05 • Кухня &amp; Вид</div><div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#FFFFFF]/90 border border-[#E5DACB] backdrop-blur-md flex items-center justify-center text-[#B91C1C] group-hover:bg-[#B91C1C] group-hover:text-white transition-all shadow-md"><span class="material-symbols-outlined text-[18px]">north_east</span></div></div><div class="p-space-md flex flex-col bg-[#FFFFFF]"><h3 class="font-headline-sm text-headline-sm text-[#231A14] font-semibold">Утро у окна</h3><p class="font-body-sm text-body-sm text-[#6C5B4E] mt-1">Тёплое дерево, свежесваренный кофе и белый снежный пейзаж за стеклом.</p></div></div><div class="snap-start shrink-0 w-[300px] sm:w-[380px] rounded-3xl bg-[#FFFFFF] border border-[#EAE1D3] shadow-[0_10px_25px_rgba(70,48,34,0.06)] overflow-hidden flex flex-col group cursor-pointer hover:shadow-xl transition-all"><div class="relative h-[440px] overflow-hidden"><img alt="Спальня" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrBJptnhH2eg4NVxiK_H0X_5Un0ZIuY49QK7nmmpj5DAFhwSHCIMb2qLOmrOm5ULSwUG1RuglZ9_1Skx5o6dTgUwKeb03T4O7tWmAY6U173pmtqD5o2G6LqE83JPWazjHqc2wBDU0-PGvG_gsh3nyh2gMaR_jJ7wP7J0ZYITAdtw943fOJ7zhCY-9KgWlxbuxRtIXyG3RMp2lsF8ueXv_yJ7aCWD695uSU3ZPWaTQgA6bg"/><div class="absolute top-4 left-4 bg-[#FFFFFF]/90 backdrop-blur-md text-[#2C211B] border border-[#E5DACB] text-xs font-label-caps font-bold px-3 py-1 rounded-full shadow-sm">02 / 05 • Спальня</div><div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#FFFFFF]/90 border border-[#E5DACB] backdrop-blur-md flex items-center justify-center text-[#B91C1C] group-hover:bg-[#B91C1C] group-hover:text-white transition-all shadow-md"><span class="material-symbols-outlined text-[18px]">north_east</span></div></div><div class="p-space-md flex flex-col bg-[#FFFFFF]"><h3 class="font-headline-sm text-headline-sm text-[#231A14] font-semibold">Сон в тишине</h3><p class="font-body-sm text-body-sm text-[#6C5B4E] mt-1">Ортопедический матрас, сатиновое постельное белье и абсолютное безмолвие.</p></div></div><div class="snap-start shrink-0 w-[300px] sm:w-[380px] rounded-3xl bg-[#FFFFFF] border border-[#EAE1D3] shadow-[0_10px_25px_rgba(70,48,34,0.06)] overflow-hidden flex flex-col group cursor-pointer hover:shadow-xl transition-all"><div class="relative h-[440px] overflow-hidden"><img alt="Ярусный альков" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrCWyPHe4aVWjAxOgVYgkCYVC7WTGCONekBeWTltALjt1u8Diz_xRHUwWT_efFnqC-tyN3JY7MoQ_altuOmWlZuekxfTDqjBiANlKZ9A0Rlxxjo8dWgXaSwsGf1XEBkM7ghFmU2OOfL8UpPCzkWYnqnUzlRhlx6P2xFtpWNSbyCv97ZMnWlMi0O4Fs8zi8Sl6hek6nT0bwbWDJa3YzVjT8DLSmYjEof9_dxqDBl3Ww2cjQ"/><div class="absolute top-4 left-4 bg-[#FFFFFF]/90 backdrop-blur-md text-[#2C211B] border border-[#E5DACB] text-xs font-label-caps font-bold px-3 py-1 rounded-full shadow-sm">03 / 05 • Альков</div><div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#FFFFFF]/90 border border-[#E5DACB] backdrop-blur-md flex items-center justify-center text-[#B91C1C] group-hover:bg-[#B91C1C] group-hover:text-white transition-all shadow-md"><span class="material-symbols-outlined text-[18px]">north_east</span></div></div><div class="p-space-md flex flex-col bg-[#FFFFFF]"><h3 class="font-headline-sm text-headline-sm text-[#231A14] font-semibold">Ярусный альков</h3><p class="font-body-sm text-body-sm text-[#6C5B4E] mt-1">Любимое место детей и друзей: индивидуальные ночники и розетки у каждой полки.</p></div></div><div class="snap-start shrink-0 w-[300px] sm:w-[380px] rounded-3xl bg-[#FFFFFF] border border-[#EAE1D3] shadow-[0_10px_25px_rgba(70,48,34,0.06)] overflow-hidden flex flex-col group cursor-pointer hover:shadow-xl transition-all"><div class="relative h-[440px] overflow-hidden"><img alt="Рабочий уголок" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrCha4hre_GEfM2gvhgzlrnW6rkasGCXF22FRmzU0MeCRslwtcM1vld0L3AgA7Kho5XhtDv-CrExyxeTIgifyqFrWp8liRfPYNKwpJcVUFUsMWxjcR_0NAKYfLVHM7jcfYe_5yuubLn31fuuvlFkYsYkNjDPmKjA8nocWq5pvif7i-KahxY4VnfV3ee_qHQyTlPxl5oT4MtxDTu0JosyTNoh4GBtRYHZd3-O0wCovI4_rA"/><div class="absolute top-4 left-4 bg-[#FFFFFF]/90 backdrop-blur-md text-[#2C211B] border border-[#E5DACB] text-xs font-label-caps font-bold px-3 py-1 rounded-full shadow-sm">04 / 05 • Рабочее место</div><div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#FFFFFF]/90 border border-[#E5DACB] backdrop-blur-md flex items-center justify-center text-[#B91C1C] group-hover:bg-[#B91C1C] group-hover:text-white transition-all shadow-md"><span class="material-symbols-outlined text-[18px]">north_east</span></div></div><div class="p-space-md flex flex-col bg-[#FFFFFF]"><h3 class="font-headline-sm text-headline-sm text-[#231A14] font-semibold">Уголок вдохновения</h3><p class="font-body-sm text-body-sm text-[#6C5B4E] mt-1">Тихий стол для ноутбука, записи путевых заметок или чтения при теплом свете.</p></div></div><div class="snap-start shrink-0 w-[300px] sm:w-[380px] rounded-3xl bg-[#FFFFFF] border border-[#EAE1D3] shadow-[0_10px_25px_rgba(70,48,34,0.06)] overflow-hidden flex flex-col group cursor-pointer hover:shadow-xl transition-all"><div class="relative h-[440px] overflow-hidden"><img alt="Гостиная" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrBn_sWbLn5trqClHOksXiGV7g1Ld5VgrV9ZSoZLEDyjsl3jIEo7hrSP2vxrRwz9mJmky9KKBwW8YJFgus84gCcHbmHB5XXp1bTWdyfKmiBd2tngW8ph_3yIN7yRmEA61NhihA9W_S2IG2w5pPkMGrtfREST3jRKcclLyjCGbpFU4UBFDGgU6V6BhPDFt6ByXRg3Jj8qTvnEhMXqWjcx5jdqWiat2odsaEwJXPjhx2fdHA"/><div class="absolute top-4 left-4 bg-[#FFFFFF]/90 backdrop-blur-md text-[#2C211B] border border-[#E5DACB] text-xs font-label-caps font-bold px-3 py-1 rounded-full shadow-sm">05 / 05 • Гостиная</div><div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#FFFFFF]/90 border border-[#E5DACB] backdrop-blur-md flex items-center justify-center text-[#B91C1C] group-hover:bg-[#B91C1C] group-hover:text-white transition-all shadow-md"><span class="material-symbols-outlined text-[18px]">north_east</span></div></div><div class="p-space-md flex flex-col bg-[#FFFFFF]"><h3 class="font-headline-sm text-headline-sm text-[#231A14] font-semibold">Гостиная с панорамой</h3><p class="font-body-sm text-body-sm text-[#6C5B4E] mt-1">Широкий диван, теплый шерстяной плед и панорамный обзор на горный курорт.</p></div></div></div><div class="flex items-center justify-center gap-2 pt-2"><span class="w-8 h-1.5 rounded-full bg-[#B91C1C]"></span><span class="w-2 h-1.5 rounded-full bg-[#DCD2C3]"></span><span class="w-2 h-1.5 rounded-full bg-[#DCD2C3]"></span><span class="w-2 h-1.5 rounded-full bg-[#DCD2C3]"></span><span class="w-2 h-1.5 rounded-full bg-[#DCD2C3]"></span><span class="font-label-sm text-label-sm text-[#7D6B5E] ml-2">Листайте или перетаскивайте фотографии</span></div></div>
+</section>
+<!-- SECTION: HOLIDAY MAGIC INTERACTIVE EXPERIENCES -->
+<section class="max-w-7xl mx-auto w-full px-gutter-sm sm:px-gutter md:px-gutter-lg py-space-2xl" id="experiences">
+<div class="p-space-xl sm:p-space-2xl rounded-3xl bg-gradient-to-br from-[#1d1611] via-[#281d16] to-[#16100c] text-snow-pure shadow-2xl relative overflow-hidden border border-[#4a3a33] hearth-glow" style="background: linear-gradient(145deg, #18281F 0%, #1D3327 50%, #251E17 100%); border: 1px solid rgba(249, 189, 34, 0.25); box-shadow: 0 20px 50px rgba(24, 40, 31, 0.25);">
+<!-- Fireplace & Fairy Light Accents -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-[#ee9800]/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-[#b91c1c]/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-[#991b1b] to-[#b91c1c] text-snow-pure text-xs font-semibold w-fit border border-[#ff8373]/30 shadow-md">
+<span class="material-symbols-outlined text-[15px] text-gold-light animate-pulse">ac_unit</span>
+              Новогодние впечатления в Бакуриани
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-snow-pure">
+              Встречайте Новый Год и Рождество в горах
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-chalet-timber max-w-md">
+            Мы позаботились обо всех деталях, чтобы ваш зимний отпуск стал наполненным теплом, ароматом праздника и комфортом.
+          </p>
+</div>
+<!-- 3 Interactive Festive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="timber-card timber-card-interactive p-space-lg rounded-2xl flex flex-col justify-between group cursor-pointer transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#ee9800]/25 to-[#b91c1c]/25 border border-gold-light/30 text-gold-light flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">local_bar</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-pure font-semibold">Глинтвейн &amp; Уют у Окна</h3>
+<p class="font-body-sm text-body-sm text-chalet-timber leading-relaxed">
+                Набор натуральных кавказских пряностей, сушеные горные травы и корица ждут на кухне для приготовления ароматного согревающего глинтвейна.
+              </p>
+</div>
+<div class="pt-space-md flex items-center gap-1.5 text-gold-light font-label-sm text-label-sm group-hover:translate-x-1 transition-transform">
+<span>Включено в проживание</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+</div>
+</div>
+<div class="timber-card timber-card-interactive p-space-lg rounded-2xl flex flex-col justify-between group cursor-pointer transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#b91c1c]/30 to-[#18120e] border border-secondary/40 text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px] text-secondary">downhill_skiing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-pure font-semibold">Склоны Кохта &amp; Дидвели</h3>
+<p class="font-body-sm text-body-sm text-chalet-timber leading-relaxed">
+                Помощь в организации трансфера до подъемников, персональный подбор проката снаряжения со скидкой 15% для наших гостей.
+              </p>
+</div>
+<div class="pt-space-md flex items-center gap-1 text-gold-light font-label-sm text-label-sm group-hover:translate-x-1 transition-transform">
+<span>Услуга консьержа</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<div class="timber-card timber-card-interactive p-space-lg rounded-2xl flex flex-col justify-between group cursor-pointer transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#ee9800]/25 to-[#18120e] border border-gold-light/30 text-gold-light flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">hot_tub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-pure font-semibold">Горячий Чан &amp; Сауна</h3>
+<p class="font-body-sm text-body-sm text-chalet-timber leading-relaxed">
+                Возможность бронирования альпийского чана на свежем воздухе с пихтовыми веточками с панорамой заснеженных гор Бакуриани.
+              </p>
+</div>
+<div class="pt-space-md flex items-center gap-1 text-gold-light font-label-sm text-label-sm group-hover:translate-x-1 transition-transform">
+<span>По запросу</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: BOOKING CALENDAR & DIRECT OWNER CONTACT -->
+<section class="w-full bg-[#18120e] py-space-2xl text-on-surface relative" id="booking-calendar" style="background: #FAF6F0; position: relative;">
+<!-- Warm glowing hearth halo -->
+<div class="absolute inset-0 bg-radial-gradient from-[#b91c1c]/10 via-transparent to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-gutter-sm sm:px-gutter md:px-gutter-lg relative z-10"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFE8DD] text-[#8C2323] w-fit font-label-caps text-label-caps tracking-[0.2em] font-bold uppercase"><span class="material-symbols-outlined text-[15px]">calendar_today</span><span>Ваш следующий выдох</span></div><h2 class="font-headline-lg text-headline-lg text-[#231A14] leading-tight">Время для вас.<br/><span class="italic text-[#B91C1C] font-display-hero">Свободные даты &amp; Цены.</span></h2><p class="font-body-lg text-body-lg text-[#5A483C] leading-relaxed">Выберите даты заезда и выезда. Отправьте заявку напрямую — хозяйка лично подтвердит возможность проживания и поможет организовать трансфер из Тбилиси или Кутаиси.</p><div class="flex flex-col gap-space-sm pt-space-xs font-body-md text-body-md text-[#2C211B]"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">check_circle</span><span class="font-medium">Без онлайн-оплаты и скрытых комиссий</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">check_circle</span><span class="font-medium">Напрямую с хозяйкой (без посредников)</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#B91C1C] text-[20px]">check_circle</span><span class="font-medium">Праздничное оформление и тёплый приём</span></div></div><div class="p-space-md rounded-2xl bg-[#FFFFFF] border border-[#E8DEC8] shadow-[0_10px_30px_rgba(70,48,34,0.06)] mt-space-md flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-[#877264] uppercase font-bold tracking-wider">Прямая связь с хозяйкой шале</span><div class="flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-full festive-red-btn flex items-center justify-center text-snow-pure shadow-md"><span class="material-symbols-outlined text-[20px]">call</span></div><div><div class="font-label-md text-label-md text-[#231A14] font-bold">+972 54-792-7001</div><div class="text-xs text-[#7A695B]">WhatsApp / Telegram / Телефон</div></div></div><a class="px-4 py-2 rounded-full bg-[#FEDB86] hover:bg-[#F9BD22] text-[#231A14] font-label-sm text-label-sm font-bold transition-all shadow-sm" href="https://wa.me/972547927001" rel="noreferrer" target="_blank">Написать</a></div></div></div><div class="lg:col-span-7"><div class="bg-[#FFFFFF] text-[#2C211B] p-space-md sm:p-space-xl rounded-3xl shadow-[0_20px_50px_rgba(70,48,34,0.08)] flex flex-col gap-space-md border border-[#E9E1D4]"><div class="grid grid-cols-2 rounded-2xl bg-[#F7F3EC] border border-[#E8DFD0] overflow-hidden p-space-sm"><div class="p-space-xs sm:p-space-sm"><span class="block font-label-caps text-label-caps text-[#8C7A6D] uppercase font-bold">Заезд</span><span class="font-label-md text-label-md text-[#8C2323] font-bold" id="cal-selected-in">28 декабря 2025</span></div><div class="p-space-xs sm:p-space-sm text-right"><span class="block font-label-caps text-label-caps text-[#8C7A6D] uppercase font-bold">Выезд</span><span class="font-label-md text-label-md text-[#8C2323] font-bold" id="cal-selected-out">04 января 2026</span></div></div><div class="flex items-center justify-between pt-1"><div class="font-headline-sm text-headline-sm text-[#231A14] font-bold">Декабрь 2025 — Январь 2026</div><div class="flex items-center gap-1 text-[#5E4E42]"><button class="w-8 h-8 rounded-full hover:bg-[#F2ECE2] flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button><button class="w-8 h-8 rounded-full hover:bg-[#F2ECE2] flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button></div></div><div class="grid grid-cols-7 text-center font-label-caps text-[11px] text-[#8C7A6D] uppercase py-1 font-bold"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span class="text-[#B91C1C]">Сб</span><span class="text-[#B91C1C]">Вс</span></div><div class="grid grid-cols-7 gap-1 text-center font-label-md text-label-md"><span class="p-2 text-[#C4B7A6]">24</span><span class="p-2 text-[#C4B7A6]">25</span><span class="p-2 text-[#C4B7A6]">26</span><span class="p-2 text-[#C4B7A6]">27</span><span class="p-2 text-[#C4B7A6]">28</span><span class="p-2 text-[#C4B7A6]">29</span><span class="p-2 text-[#C4B7A6]">30</span><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">1</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">2</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">3</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">4</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">5</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">6</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">7</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">8</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">9</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">10</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">11</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">12</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">13</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">14</button><button class="p-2 rounded-lg bg-[#EFE8DD] text-[#A69788] line-through cursor-not-allowed">15</button><button class="p-2 rounded-lg bg-[#EFE8DD] text-[#A69788] line-through cursor-not-allowed">16</button><button class="p-2 rounded-lg bg-[#EFE8DD] text-[#A69788] line-through cursor-not-allowed">17</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">18</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">19</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">20</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">21</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">22</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">23</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">24</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">25</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">26</button><button class="p-2 rounded-lg hover:bg-[#F7F3EC] text-[#2C211B]">27</button><button class="p-2 rounded-lg festive-red-btn text-snow-pure font-bold shadow-md">28</button><button class="p-2 rounded-lg bg-[#F8D7DA] text-[#8C2323] font-semibold border border-[#F5C2C7]">29</button><button class="p-2 rounded-lg bg-[#F8D7DA] text-[#8C2323] font-semibold border border-[#F5C2C7]">30</button><button class="p-2 rounded-lg festive-red-btn text-snow-pure font-bold shadow-md relative">31<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#FEDB86] animate-ping"></span></button><button class="p-2 rounded-lg bg-[#F8D7DA] text-[#8C2323] font-semibold border border-[#F5C2C7]">1</button><button class="p-2 rounded-lg bg-[#F8D7DA] text-[#8C2323] font-semibold border border-[#F5C2C7]">2</button><button class="p-2 rounded-lg bg-[#F8D7DA] text-[#8C2323] font-semibold border border-[#F5C2C7]">3</button><button class="p-2 rounded-lg festive-red-btn text-snow-pure font-bold shadow-md">4</button></div><div class="flex items-center justify-center gap-space-md pt-2 text-xs text-[#7A695B] flex-wrap gap-3 sm:gap-space-md"><div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#FFFFFF] border border-[#DDD3C2]"></span><span>Свободно</span></div><div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#EFE8DD] line-through"></span><span>Занято</span></div><div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#B91C1C]"></span><span>Новогодняя ночь</span></div><div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#F8D7DA] border border-[#F5C2C7]"></span><span>Ваш выбор</span></div></div><div class="pt-space-sm flex flex-col gap-space-sm"><div class="flex items-center justify-between p-space-sm rounded-xl bg-[#F7F3EC] border border-[#E8DFD0]"><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Тариф за 7 ночей</div><div class="text-xs text-[#7A695B]">$150 × 7 ночей • Финальная стоимость</div></div><div class="text-right"><div class="font-headline-sm text-headline-sm text-[#8C2323] font-bold">$1,050</div><div class="text-[11px] text-[#7A695B]">Без сервисных сборов</div></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs"><input class="px-space-md py-3 rounded-xl bg-[#FFFFFF] border border-[#DDD3C2] text-[#2C211B] text-sm focus:outline-none focus:border-[#B91C1C] placeholder:text-[#A8988B]" placeholder="Ваше имя" type="text"/><input class="px-space-md py-3 rounded-xl bg-[#FFFFFF] border border-[#DDD3C2] text-[#2C211B] text-sm focus:outline-none focus:border-[#B91C1C] placeholder:text-[#A8988B]" placeholder="Номер WhatsApp / Telegram" type="tel"/></div><button class="w-full flex items-center justify-center gap-space-xs festive-red-btn text-snow-pure py-3.5 px-space-md rounded-xl font-label-md text-label-md font-bold transition-all shadow-md hover:shadow-lg" id="book-submit-btn"><span class="material-symbols-outlined text-[18px]">send</span><span>Отправить запрос хозяйке в WhatsApp</span></button><span class="text-center text-[12px] text-[#7A695B]">Хозяйка свяжется с вами в течение 15 минут для подтверждения брони.</span></div></div></div></div></div>
+</section>
+<!-- SECTION: 3D MODEL & FLOOR PLAN (Ваш отдых со всех сторон) -->
+<section class="max-w-7xl mx-auto w-full px-gutter-sm sm:px-gutter md:px-gutter-lg py-space-2xl" id="tour3d">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFE8DD] text-[#8C2323] w-fit font-label-caps text-label-caps tracking-[0.2em] font-bold uppercase"><span class="material-symbols-outlined text-[15px]">view_in_ar</span><span>Почувствуйте пространство</span></div><h2 class="font-headline-lg text-headline-lg text-[#231A14] tracking-tight">Ваш отдых.<br/><span class="italic text-[#B91C1C] font-display-hero">Со всех сторон.</span></h2><p class="font-body-lg text-body-lg text-[#5A483C] leading-relaxed">Загляните в каждый уголок до заезда. Продуманная двухуровневая планировка с разделением приватной спальной зоны и просторной гостиной для теплых праздничных вечеров.</p><div class="flex flex-col gap-space-sm pt-space-xs"><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#E9E1D4] shadow-sm hover:border-[#B91C1C]/40 transition-colors flex items-start gap-3 cursor-pointer group"><span class="w-6 h-6 rounded-full bg-[#B91C1C] text-snow-pure text-xs flex items-center justify-center font-bold shrink-0 mt-0.5 shadow-sm">1</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold group-hover:text-[#B91C1C] transition-colors">Кухня-столовая с панорамным видом</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">Плита, холодильник, посудомоечная машина, кофемашина и обеденная зона на 6 персон.</div></div></div><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#E9E1D4] shadow-sm hover:border-[#B91C1C]/40 transition-colors flex items-start gap-3 cursor-pointer group"><span class="w-6 h-6 rounded-full bg-[#B91C1C] text-snow-pure text-xs flex items-center justify-center font-bold shrink-0 mt-0.5 shadow-sm">2</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold group-hover:text-[#B91C1C] transition-colors">Мастер-спальня &amp; Ярусный альков</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">Изолированное спальное крыло с шумоизоляцией и видом на ели в снегу.</div></div></div><div class="p-space-sm rounded-xl bg-[#FFFFFF] border border-[#E9E1D4] shadow-sm hover:border-[#B91C1C]/40 transition-colors flex items-start gap-3 cursor-pointer group"><span class="w-6 h-6 rounded-full bg-[#B91C1C] text-snow-pure text-xs flex items-center justify-center font-bold shrink-0 mt-0.5 shadow-sm">3</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold group-hover:text-[#B91C1C] transition-colors">Ванная комната с теплым полом</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">Тропический душ, фен, халаты, стиральная машина и сушилка для лыжных костюмов.</div></div></div></div><div class="pt-space-xs flex items-center gap-space-sm"><a class="inline-flex items-center gap-2 festive-red-btn text-snow-pure px-space-lg py-3 rounded-full font-label-md text-label-md transition-all shadow-md hover:shadow-lg" href="#"><span class="material-symbols-outlined text-[18px]">view_in_ar</span><span>Рассмотреть квартиру в 3D</span><span class="material-symbols-outlined text-[18px]">north_east</span></a></div></div><div class="lg:col-span-7 relative group"><div class="rounded-3xl overflow-hidden bg-[#FFFFFF] shadow-[0_20px_50px_rgba(70,48,34,0.08)] p-space-sm sm:p-space-md border border-[#E8DEC8]"><div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#F7F3EC]"><img alt="3D планировка двухуровневых апартаментов mta Bakuriani" class="w-full h-full object-contain p-2 group-hover:scale-[1.02] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/ALJJyrAwRwbRsSbHRl6ui7FpsYTeGdpuL1EuQtgOKBKuBVa6BfwwYsoujX3lG2Qi_qBl0Kdm33KlQC1Mp8IC0LRzPUtD49FAEa_AhRd-RNdcAtQQFuyvmqjUkZz2ME2ECQpVU0aEAyKTwHewd5RyAK_2Uq8aRHTjzqlFcrMXBxmCqjF22C5_ic1D8lBYFyVPlSMZk-5e1IV51Cx1P7zlAaMIgViTiSxEFaNO13lKGyioPvkIow"/><div class="absolute top-[42%] left-[48%] -translate-x-1/2 -translate-y-1/2"><span class="flex h-7 w-7 items-center justify-center rounded-full bg-[#B91C1C] text-snow-pure font-bold text-xs shadow-lg animate-bounce cursor-pointer border-2 border-white" title="Кухня-гостиная">1</span></div><div class="absolute top-[30%] left-[72%] -translate-x-1/2 -translate-y-1/2"><span class="flex h-7 w-7 items-center justify-center rounded-full bg-[#B91C1C] text-snow-pure font-bold text-xs shadow-lg cursor-pointer border-2 border-white" title="Спальня">2</span></div><div class="absolute top-[65%] left-[35%] -translate-x-1/2 -translate-y-1/2"><span class="flex h-7 w-7 items-center justify-center rounded-full bg-[#B91C1C] text-snow-pure font-bold text-xs shadow-lg cursor-pointer border-2 border-white" title="Ванная и сушилка">3</span></div><div class="absolute bottom-4 right-4 bg-[#FFFFFF]/90 border border-[#DDD3C2] backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-1.5 text-xs text-[#2C211B] font-bold"><span class="material-symbols-outlined text-[#B91C1C] text-[16px]">rotate_right</span><span>Вращайте и выбирайте комнаты</span></div></div></div></div></div>
+</section>
+<!-- SECTION: LOCATION & BAKURIANI WINTER VIBES -->
+<section class="w-full py-space-2xl bg-[#1d1612] border-t border-[#3d2f27]" id="location" style="background: #F4EFE6; border-top: 1px solid #E8DFD0;">
+<div class="max-w-7xl mx-auto px-gutter-sm sm:px-gutter md:px-gutter-lg"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"><div class="lg:col-span-6 relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(70,48,34,0.12)] aspect-square bg-[#FFFFFF] group border border-[#E8DEC8]"><img alt="mta Bakuriani интерьер шале рабочий стол" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ALJJyrCha4hre_GEfM2gvhgzlrnW6rkasGCXF22FRmzU0MeCRslwtcM1vld0L3AgA7Kho5XhtDv-CrExyxeTIgifyqFrWp8liRfPYNKwpJcVUFUsMWxjcR_0NAKYfLVHM7jcfYe_5yuubLn31fuuvlFkYsYkNjDPmKjA8nocWq5pvif7i-KahxY4VnfV3ee_qHQyTlPxl5oT4MtxDTu0JosyTNoh4GBtRYHZd3-O0wCovI4_rA"/><div class="absolute inset-0 bg-gradient-to-t from-[#1C1510]/80 via-transparent to-transparent"></div><div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white"><div><span class="font-label-caps text-label-caps text-[#FEDB86] uppercase font-bold tracking-wider">Бакуриани, Грузия</span><div class="font-headline-sm text-headline-sm text-white font-medium mt-1">Raymond (Guram) Gogoladze 42</div></div><div class="w-11 h-11 rounded-full bg-[#FFFFFF]/90 border border-white backdrop-blur-md text-[#B91C1C] flex items-center justify-center shadow-lg"><span class="material-symbols-outlined text-[22px]">pin_drop</span></div></div></div><div class="lg:col-span-6 flex flex-col gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8E0D2] text-[#8C2323] w-fit font-label-caps text-label-caps tracking-[0.2em] font-bold uppercase mb-1"><span class="material-symbols-outlined text-[15px]">distance</span><span>Бакуриани • 1800 метров над уровнем моря</span></div><h2 class="font-headline-lg text-headline-lg text-[#231A14] tracking-tight">Меняйте планы.<br/><span class="italic text-[#B91C1C] font-display-hero">Оставляйте время себе.</span></h2><p class="font-body-lg text-body-lg text-[#5A483C] leading-relaxed">Для неспешных зимних утр и вечеров, которые не хочется торопить. Апартаменты расположены в спокойном тихом квартале в шаге от векового хвойного леса, вдали от шума центральных дорог.</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs"><div class="p-space-sm rounded-2xl bg-[#FFFFFF] border border-[#E8DEC8] flex items-start gap-3 shadow-sm"><span class="material-symbols-outlined text-[#B91C1C] text-[22px] mt-0.5">downhill_skiing</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Трасса Кохта</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">5–7 минут на машине / ски-басе</div></div></div><div class="p-space-sm rounded-2xl bg-[#FFFFFF] border border-[#E8DEC8] flex items-start gap-3 shadow-sm"><span class="material-symbols-outlined text-[#B91C1C] text-[22px] mt-0.5">snowshoeing</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Трасса Дидвели</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">10 минут на машине (ночное катание)</div></div></div><div class="p-space-sm rounded-2xl bg-[#FFFFFF] border border-[#E8DEC8] flex items-start gap-3 shadow-sm"><span class="material-symbols-outlined text-[#D4891C] text-[22px] mt-0.5">restaurant</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Грузинские рестораны</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">300 м — хачапури по-аджарски и хинкали</div></div></div><div class="p-space-sm rounded-2xl bg-[#FFFFFF] border border-[#E8DEC8] flex items-start gap-3 shadow-sm"><span class="material-symbols-outlined text-[#2A593D] text-[22px] mt-0.5">local_convenience_store</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Супермаркет и аптека</div><div class="font-body-sm text-body-sm text-[#6C5B4E]">5 минут пешком от порога</div></div></div></div><div class="pt-space-xs flex items-center gap-space-md"><a class="inline-flex items-center gap-2 text-[#8C2323] font-label-md text-label-md font-bold hover:underline underline-offset-4" href="https://maps.google.com/?q=Bakuriani+Georgia" rel="noreferrer" target="_blank"><span>Открыть адрес на картах Google</span><span class="material-symbols-outlined text-[16px]">north_east</span></a></div></div></div></div>
+</section>
+<!-- Interactive Snowflake Engine (Vanilla JS Canvas) -->
+<script>
+    (function initHolidaySnow() {
+      const canvas = document.getElementById('snow-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      const flakesCount = 70;
+      const flakes = [];
+
+      for (let i = 0; i < flakesCount; i++) {
+        flakes.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 2.5 + 0.7,
+          opacity: Math.random() * 0.7 + 0.25,
+          speed: Math.random() * 0.8 + 0.35
+        });
+      }
+
+      function render() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < flakesCount; i++) {
+          const f = flakes[i];
+          ctx.beginPath();
+          ctx.arc(f.x, f.y, f.radius, 0, Math.PI * 2, true);
+          ctx.fillStyle = `rgba(255, 245, 235, ${f.opacity})`;
+          ctx.fill();
+
+          f.y += f.speed;
+          f.x += Math.sin(f.y * 0.015) * 0.5;
+
+          if (f.y > height) {
+            f.y = -5;
+            f.x = Math.random() * width;
+          }
+          if (f.x > width + 5) f.x = -5;
+          if (f.x < -5) f.x = width + 5;
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+
+      // Gallery Buttons Micro-interaction
+      const scroller = document.getElementById('gallery-scroller');
+      const prevBtn = document.getElementById('gal-prev-btn');
+      const nextBtn = document.getElementById('gal-next-btn');
+
+      if (scroller && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+          scroller.scrollBy({ left: -340, behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', () => {
+          scroller.scrollBy({ left: 340, behavior: 'smooth' });
+        });
+      }
+
+      // Quick Booking Submit Action
+      const submitBtn = document.getElementById('book-submit-btn');
+      if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+          const message = encodeURIComponent("Здравствуйте! Хочу забронировать новогодние апартаменты mta. Bakuriani с 28 декабря по 4 января.");
+          window.open(`https://wa.me/972547927001?text=${message}`, '_blank');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-[#120c08] text-chalet-timber border-t border-[#3d2f27] pt-space-2xl pb-space-xl" style="background: #EDE6DC; color: #5C4B3E; border-top: 1px solid #D8CBB5;"><div class="max-w-7xl mx-auto px-gutter-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-[#D8CBB5]"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F5EBE1] to-[#EBDCCF] border border-[#D8CBB5] text-[#8C2323] flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[20px]">cottage</span></div><span class="font-headline-md text-headline-md text-[#231A14] tracking-tight font-semibold">mta. Bakuriani</span></div><p class="font-body-sm text-body-sm text-[#5C4B3E] leading-relaxed">Камерный высокогорный альпийский шале-курорт в сердце заснеженных гор Бакуриани, Грузия. Уют живого камина, авторский хвойный глинтвейн и уединение в гармонии с Кавказом.</p><div class="flex items-center gap-space-sm mt-space-sm text-[#8C2323]"><span class="material-symbols-outlined text-[18px]">celebration</span><span class="font-headline-sm text-headline-sm italic text-[#231A14] font-medium">С Новым Годом в горах Бакуриани</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-[#8C2323] tracking-widest uppercase font-bold">Навигация по резиденции</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-[#5C4B3E]"><li class="hover:text-[#231A14] transition-colors cursor-pointer">Шале Премиум &amp; Люксы</li><li class="hover:text-[#231A14] transition-colors cursor-pointer">Новогодний гала-ужин 31 декабря</li><li class="hover:text-[#231A14] transition-colors cursor-pointer">Трассы Дидвели &amp; Кохта трансфер</li><li class="hover:text-[#231A14] transition-colors cursor-pointer">Финская сауна &amp; горячий чан с пихтой</li><li class="hover:text-[#231A14] transition-colors cursor-pointer">Услуги консьержа &amp; ski-pass</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-[#8C2323] tracking-widest uppercase font-bold">Контакты &amp; Бронь</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-[#5C4B3E]"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[#B91C1C] text-[18px] shrink-0 mt-0.5">location_on</span><span>Raymond Gogoladze Street 42, Bakuriani, 1205, Georgia</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[#B91C1C] text-[18px] shrink-0">call</span><span class="font-bold text-[#231A14]">+972 54-792-7001</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[#B91C1C] text-[18px] shrink-0">mail</span><span>concierge@mta-bakuriani.ge</span></div></div><div class="flex items-center gap-space-sm mt-space-xs"><a class="px-space-md py-1.5 rounded-full bg-[#FFFFFF] border border-[#D8CBB5] text-[#231A14] font-label-sm text-label-sm hover:border-[#8C2323] transition-all flex items-center gap-1.5 shadow-sm font-semibold" href="https://wa.me/972547927001" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>WhatsApp</a><a class="px-space-md py-1.5 rounded-full bg-[#FFFFFF] border border-[#D8CBB5] text-[#231A14] font-label-sm text-label-sm hover:border-[#8C2323] transition-all flex items-center gap-1.5 shadow-sm font-semibold" href="https://t.me/" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-[#0088CC]">send</span>Telegram</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-[#8C2323] tracking-widest uppercase font-bold">Зимний сезон 24/25 &amp; 25/26</span><p class="font-body-sm text-body-sm text-[#5C4B3E] leading-relaxed">Открыто предварительное бронирование дат на рождественские и новогодние заезды. Индивидуальные трансферы из Тбилиси и Кутаиси.</p><div class="p-space-md rounded-xl bg-[#FFFFFF] border border-[#D8CBB5] flex items-center gap-space-sm shadow-sm"><span class="material-symbols-outlined text-[#D4891C] text-[28px]">verified</span><div><div class="font-label-md text-label-md text-[#231A14] font-bold">Прямой тариф отеля</div><div class="font-label-sm text-label-sm text-[#7A695B]">Без комиссий и скрытых сборов</div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-[#7A695B]"><div>© 2025 mta. Bakuriani Boutique Chalet. Все права защищены.</div><div class="flex items-center gap-space-lg flex-wrap justify-center gap-4 sm:gap-space-lg"><span class="hover:text-[#231A14] transition-colors cursor-pointer">Политика конфиденциальности</span><span class="hover:text-[#231A14] transition-colors cursor-pointer">Условия бронирования и отмены</span><span class="hover:text-[#231A14] transition-colors cursor-pointer">Карта склонов</span></div></div></div></footer></body></html>
