@@ -1,0 +1,50 @@
+export const winterCopy = {
+  ru: {
+    season: 'ЗИМА 2026 / 2027', ribbon: 'Новый год в горах · Бакуриани, Грузия',
+    hero1: 'Ближе к горам.', hero2: 'Ближе к чуду.',
+    heroText: 'Тёплый свет, деревянные стены и снег за окном. Подарите себе несколько дней в зимней сказке Бакуриани.',
+    book: 'Выбрать даты', from: 'За ночь', stay: 'Ваш зимний отдых', facts: 'Уют для всей семьи',
+    preview: 'БЕТА · Только локальный просмотр', previewNotice: 'Демонстрационный календарь · реальные заявки не отправляются',
+    winterNav: 'Зимний отдых', winterLabel: 'МАЛЕНЬКИЕ ЗИМНИЕ РАДОСТИ',
+    winterTitle: 'У зимы свой ритм.', winterSubtitle: 'В Бакуриани можно чередовать горные приключения с тихими вечерами дома.',
+    experiences: [
+      {title:'Снежные склоны', description:'Проведите день на горных трассах курорта.'},
+      {title:'Утро без спешки', description:'Горячий чай, тёплое дерево и время для близких.'},
+      {title:'Зимние прогулки', description:'Откройте зимние пейзажи Бакуриани в своём темпе.'},
+    ],
+    holiday: 'Счастливого Нового года!', holidayText: 'Пусть в новом году будет больше тёплых моментов.',
+    summary:'Прямое бронирование · без онлайн-оплаты', profileDemo:'Вход в демонстрационный профиль',
+  },
+  en: {
+    season: 'WINTER 2026 / 2027', ribbon: 'New Year in the mountains · Bakuriani, Georgia',
+    hero1: 'Closer to the mountains.', hero2: 'Closer to the magic.',
+    heroText: 'Warm light, natural wood and snow outside. Give yourself a few days of winter wonder in Bakuriani.',
+    book:'Choose dates', from:'Per night', stay:'Your winter escape', facts:'Room for the whole family',
+    preview:'BETA · Local preview only', previewNotice:'Demo calendar · no real requests are sent',
+    winterNav:'Winter escape', winterLabel:'LITTLE WINTER JOYS',
+    winterTitle:'Winter has its own rhythm.', winterSubtitle:'Balance mountain adventures with peaceful evenings at home in Bakuriani.',
+    experiences:[
+      {title:'Snowy slopes',description:'Spend a day exploring the resort’s mountain slopes.'},
+      {title:'Slow mornings',description:'Hot tea, warm wood and time with loved ones.'},
+      {title:'Winter walks',description:'Discover Bakuriani’s winter landscapes at your own pace.'},
+    ],
+    holiday:'Happy New Year!', holidayText:'May the new year bring more warm moments.',
+    summary:'Direct booking · no online payment', profileDemo:'Enter demo profile',
+  },
+  ka: {
+    season:'ზამთარი 2026 / 2027', ribbon:'ახალი წელი მთებში · ბაკურიანი, საქართველო',
+    hero1:'მთებთან უფრო ახლოს.', hero2:'სასწაულთან უფრო ახლოს.',
+    heroText:'თბილი სინათლე, ბუნებრივი ხე და თოვლი ფანჯრის მიღმა. გაატარეთ რამდენიმე დღე ბაკურიანის ზამთრის ზღაპარში.',
+    book:'აირჩიეთ თარიღები', from:'ღამეში', stay:'თქვენი ზამთრის დასვენება', facts:'სიმყუდროვე მთელი ოჯახისთვის',
+    preview:'ბეტა · მხოლოდ ლოკალური ვერსია', previewNotice:'სატესტო კალენდარი · რეალური მოთხოვნები არ იგზავნება',
+    winterNav:'ზამთრის დასვენება', winterLabel:'ზამთრის პატარა სიხარულები',
+    winterTitle:'ზამთარს საკუთარი რიტმი აქვს.', winterSubtitle:'შეუთავსეთ მთის თავგადასავლები მშვიდ საღამოებს ბაკურიანში.',
+    experiences:[
+      {title:'თოვლიანი ფერდობები',description:'გაატარეთ დღე კურორტის სამთო ტრასებზე.'},
+      {title:'აუჩქარებელი დილა',description:'ცხელი ჩაი, თბილი ხე და დრო საყვარელ ადამიანებთან.'},
+      {title:'ზამთრის სეირნობა',description:'აღმოაჩინეთ ბაკურიანის ზამთრის ხედები თქვენს ტემპში.'},
+    ],
+    holiday:'გილოცავთ ახალ წელს!', holidayText:'ახალმა წელმა მეტი თბილი მომენტი მოგიტანოთ.',
+    summary:'პირდაპირი დაჯავშნა · ონლაინ გადახდის გარეშე', profileDemo:'სატესტო პროფილში შესვლა',
+  }
+} as const;

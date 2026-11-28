@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /host
+Disallow: /profile
+Sitemap: https://bakurianimta.web.app/sitemap.xml

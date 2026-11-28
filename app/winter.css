@@ -1,0 +1,17 @@
+.winter-theme { --winter-red:#8b2732; background:#f1f1e8; }
+.winter-snowfall { position:fixed; inset:0; z-index:45; pointer-events:none; overflow:hidden; }
+.winter-snowfall i { position:absolute; top:-20px; left:var(--left); width:var(--size); height:var(--size); border-radius:50%; background:rgba(255,255,255,.9); box-shadow:0 1px 4px rgba(49,71,65,.28); animation:snowfall var(--duration) var(--delay) linear infinite; }
+@keyframes snowfall { 0% {transform:translate3d(0,-15px,0)} 100% {transform:translate3d(var(--drift),110vh,0)} }
+.winter-theme .hero:after { content:''; position:absolute; z-index:2; bottom:-1px; left:0; width:100%; height:46px; background:#f3f3eb; clip-path:polygon(0 65%,5% 58%,11% 72%,18% 51%,25% 65%,33% 56%,41% 73%,49% 61%,58% 74%,67% 55%,75% 70%,84% 53%,92% 68%,100% 48%,100% 100%,0 100%); pointer-events:none; }
+.winter-theme .hero-shade { background:linear-gradient(90deg,rgba(13,35,28,.73),rgba(24,42,35,.12)),linear-gradient(0deg,rgba(25,44,37,.30),transparent 65%); }
+.winter-theme .booking-section { position:relative; }
+.winter-theme .booking-card { box-shadow:0 20px 60px rgba(12,36,27,.15); }
+.winter-theme .site-header .brand:before { content:'✳'; display:inline-block; margin-right:8px; color:#fff; font-size:15px; }
+.winter-theme .request-button { background:var(--winter-red); }
+.winter-farewell { position:relative; height:190px; overflow:hidden; background:linear-gradient(#eef2ec,#dfe9e5); }
+.winter-hills { position:absolute; inset:60px 0 0; background:#f9faf5; clip-path:polygon(0 49%,13% 28%,28% 52%,42% 27%,57% 48%,70% 26%,84% 45%,100% 19%,100% 100%,0 100%); }
+.winter-farewell>span { position:absolute; color:#b6c9c2; font-size:16px; top:32px; left:20%; }.winter-farewell>span:nth-last-child(2){left:78%;top:48px}.winter-farewell>span:last-child{left:64%;top:18px}
+.winter-snowman {position:absolute; bottom:9px; left:50%; width:110px; height:155px; transform:translateX(-50%)}
+.winter-snowman i {position:absolute; display:block}.snowman-body { width:87px;height:79px;bottom:0;left:12px;border-radius:50%;background:radial-gradient(circle at 34% 24%,#fff,#e5ece8);box-shadow:0 4px 12px #9daea52b}.snowman-head {z-index:2;width:61px;height:58px;left:25px;top:25px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#e3ebe8)}.snowman-head:after{content:'•  •';position:absolute;top:15px;left:16px;color:#304b40;letter-spacing:5px;font-size:13px}.snowman-hat{z-index:4;top:7px;left:36px;width:38px;height:30px;background:#263e34;border-radius:5px 5px 0 0;transform:rotate(-7deg)}.snowman-hat:after{content:'';position:absolute;bottom:-3px;left:-8px;width:55px;height:7px;background:#263e34;border-radius:6px}.snowman-scarf{z-index:3;top:76px;left:25px;width:62px;height:12px;background:#922d38;border-radius:8px;transform:rotate(-5deg)}.snowman-scarf:after{content:'';position:absolute;right:10px;top:5px;width:12px;height:27px;background:#922d38;border-radius:3px;transform:rotate(-8deg)}
+@media(max-width:600px){.winter-snowfall i:nth-child(n+17){display:none}.winter-theme .hero:after{height:30px}.winter-farewell{height:150px}.winter-snowman{transform:translateX(-50%) scale(.8);transform-origin:bottom}}
+@media(prefers-reduced-motion:reduce){.winter-snowfall{display:none}}

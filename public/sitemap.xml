@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bakurianimta.web.app/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bakurianimta.web.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakurianimta.web.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://bakurianimta.web.app/ka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bakurianimta.web.app/" />
+  </url>
+  <url>
+    <loc>https://bakurianimta.web.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bakurianimta.web.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakurianimta.web.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://bakurianimta.web.app/ka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bakurianimta.web.app/" />
+  </url>
+  <url>
+    <loc>https://bakurianimta.web.app/ka/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bakurianimta.web.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakurianimta.web.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://bakurianimta.web.app/ka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bakurianimta.web.app/" />
+  </url>
+</urlset>
